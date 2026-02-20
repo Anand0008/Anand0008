@@ -12,7 +12,9 @@
 
 ### About
 
-Applied AI Engineer focused on building **multi-model consensus systems** that are cost-efficient, production-grade, and research-driven. Former **J.P. Morgan** associate (production engineering for global distributed systems). Currently building AI infrastructure that routes, orchestrates, and fuses outputs from frontier LLMs.
+**I engineer intelligence.**
+
+I am an Applied AI Engineer bridging the gap between cutting-edge research and production reality. With a foundation in distributed systems from **J.P. Morgan** and deep expertise in Generative AI, I build scalable infrastructure that makes LLMs reliable, cost-efficient, and accurate. I don't just use models; I architect the systems that control them.
 
 ```
 📍 India  •  🎓 B.E. Information Technology (9.59/10)  •  🏢 Ex-J.P. Morgan Chase
@@ -100,10 +102,10 @@ Production-grade **14-stage pipeline** for structured content generation with ad
 </td>
 <td width="50%" valign="top">
 
-#### [🌐 Knowledge Graph Induction](https://github.com/Anand0008/Knowledge_Graph_Induction)
-Interactive **3D/2D force-directed graph** explorer with 37,601 nodes and 55,153 edges. Year-wise filtering, syllabus drill-down, and click-to-explore concept relationships. Zero-dependency HTML.
+#### [🌐 Automated Knowledge Graph Induction](https://github.com/Anand0008/Knowledge_Graph_Induction)
+Downstream application of the **FLSS consensus pipeline**. Automatically induced a curriculum-aligned ontology with 37,970 nodes and 55,153 edges directly from synthesized question metadata. Achieved **94.95% connectivity** without manual curation, enabling bidirectional navigation (Questions ↔ Concepts) and exposing hidden semantic relationships (prerequisites, common mistakes).
 
-`JavaScript` `Three.js` `Force-Graph` `Data Viz`
+`Data Mining` `Ontology Learning` `Three.js` `Data Viz`
 
 </td>
 </tr>
@@ -129,6 +131,14 @@ Conversational AI assistant for hotel booking built with the **Rasa framework**.
 
 ---
 
+### 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Anand0008&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" />
+</p>
+
+---
+
 ### 📊 GitHub Stats
 
 <p align="center">
@@ -140,4 +150,12 @@ Conversational AI assistant for hotel booking built with the **Rasa framework**.
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Anand0008&color=38bdf8&style=flat-square&label=Profile+Views" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Anand0008/Anand0008/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Anand0008/Anand0008/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Anand0008/Anand0008/output/github-contribution-grid-snake.svg" width="100%">
+  </picture>
 </p>
