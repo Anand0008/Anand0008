@@ -146,7 +146,7 @@ Conversational AI assistant for hotel booking built with the **Rasa framework**.
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Anand0008&color=38bdf8&style=flat-square&label=Profile+Views" />
+  <img src="https://komarev.com/ghpvc/?username=Anand0008&color=38bdf8&style=flat-square&label=Profile+Views&base=257" />
 </p>
 
 <p align="center">
