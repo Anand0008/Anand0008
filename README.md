@@ -10,14 +10,24 @@
 
 ---
 
-### About
+### 👨‍💻 About Me
 
-**I engineer intelligence.**
+### 👨‍💻 About Me
 
-I am an Applied AI Engineer bridging the gap between cutting-edge research and production reality. With a foundation in distributed systems from **J.P. Morgan** and deep expertise in Generative AI, I build scalable infrastructure that makes LLMs reliable, cost-efficient, and accurate. I don't just use models; I architect the systems that control them.
+> **"An Independent Researcher & Production-Grade Builder."**
 
-```
-📍 India  •  🎓 B.E. Information Technology (9.59/10)  •  🏢 Ex-J.P. Morgan Chase
+I am an **AI/ML Engineer** who builds intelligent systems with measurable impact. My work sits at the intersection of complex data, advanced algorithms, and unforgiving real-world constraints—transforming theoretical problems into highly scalable, production-ready solutions. 
+
+I specialize in designing end-to-end machine learning pipelines from the ground up: encompassing rigorous data ingestion, feature engineering, model deployment, continuous monitoring, and automated improvement. I bring a deep foundation in statistical learning, deep learning, and mathematical optimization. 
+
+Crucially, I pair this theoretical rigor with battle-tested experience in delivering infrastructure that survives under extreme operational pressure—a discipline I honed extensively during my tenure in **Production Management at J.P. Morgan Chase** (a non-AI role that taught me how to operate flawless mission-critical systems). I care deeply about the engineering craft: reproducibility, model interpretability, and robust evaluation are never afterthoughts; they are my core principles. I understand fundamentally that the greatest algorithms only matter if they integrate flawlessly with existing systems, empower teams, and drive concrete business objectives.
+
+**In short: I don't just train models; I engineer intelligence.** Bridging the gap between academic rigor and production reliability is my specialty.
+
+When I'm not optimizing data pipelines or researching novel architectures, you'll find me singing 🎤, travelling to new corners of the globe 🌍, or dissecting anime lore. I'm also an avid reader 📚 and a passionate chess player ♟️—always exploring new worlds, whether in code or in reality.
+
+```text
+📍 India  •  🎓 B.E. Information Technology (9.59/10)  •  🏢 Ex-J.P. Morgan Chase (Production Management)
 ```
 
 ---
@@ -28,32 +38,16 @@ I am an Applied AI Engineer bridging the gap between cutting-edge research and p
 <tr>
 <td width="50%" valign="top">
 
-#### 🧠 FLSS — Multi-Model Consensus
+#### 🧠 FLSS — Cost-Aware Multi-Model Consensus Architecture
 
-A novel **Field-Level Structured Selection** framework that orchestrates GPT-4, Claude 3.5 Sonnet, and DeepSeek-R1 to produce high-fidelity structured outputs via weighted consensus.
+A production-grade, 14-stage automated pipeline I authored for high-fidelity structured synthesis. FLSS fundamentally solves single-model hallucinations by forcing an adversarial consensus mechanism. It goes far beyond simply chaining API calls, instead orchestrating a highly complex reasoning engine:
 
-```
-                ┌─────────────┐
-    Query ──▶   │  Cost-Aware  │
-                │   Router     │
-                └──────┬───────┘
-           ┌───────────┼───────────┐
-           ▼           ▼           ▼
-      ┌─────────┐ ┌─────────┐ ┌─────────┐
-      │ GPT-4.1 │ │ Claude  │ │DeepSeek │
-      │         │ │  3.5    │ │   R1    │
-      └────┬────┘ └────┬────┘ └────┬────┘
-           └───────────┼───────────┘
-                       ▼
-              ┌────────────────┐
-              │  FLSS Merger   │
-              │  (per-field    │
-              │   consensus)   │
-              └────────┬───────┘
-                       ▼
-              93.9% Precision
-              50% Cost Reduction
-```
+*   **Hybrid RAG & Reciprocal Rank Fusion**: Integrates Dense Retrieval (BAAI/bge-m3 embeddings via Qdrant) with Sparse Retrieval (BM25 lexical search) to inject high-precision context directly into the context window.
+*   **Schema-Aware Conditional Routing**: Dynamically grades query complexity (1-10) at runtime to route requests to appropriate compute tiers—drastically reducing overhead by reserving SOTA models solely for tier-3 algorithmic reasoning.
+*   **Adaptive Weighted Voting**: An algorithmic consensus mathematically weights outputs from DeepSeek R1 (Math), Claude Sonnet 4.5 (Pedagogy), and Gemini 2.5 Pro (Vision) strictly based on their proven domain strengths.
+*   **Multi-Round Adversarial Debate**: If mathematical consensus falls below a strict 80% threshold, the system autonomously triggers an adversarial debate phase—eventually invoking GPT-5.1 as an impartial judge to force systematic resolution.
+
+This complete rewrite has systematically dropped hallucination rates down to 0.31% over 1,270 complex data objects.
 
 </td>
 <td width="50%" valign="top">
