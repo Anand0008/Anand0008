@@ -32,34 +32,36 @@ When I'm not optimizing data pipelines or researching novel architectures, you'l
 
 ### 🏗️ What I Build
 
-<table>
-<tr>
-<td width="50%" valign="top">
+> Three flagships: two production agentic systems shipping today, one published research pipeline behind them.
 
-#### 🧠 FLSS — Cost-Aware Multi-Model Consensus Architecture
+---
 
-A production-grade, 14-stage automated pipeline I authored for high-fidelity structured synthesis. FLSS fundamentally solves single-model hallucinations by forcing an adversarial consensus mechanism. It goes far beyond simply chaining API calls, instead orchestrating a highly complex reasoning engine:
+#### 🤖 IDRE Reports Bot
+**Telomere** · Agentic AI Reporting Platform · *production, current role*
 
-*   **Hybrid RAG & Reciprocal Rank Fusion**: Integrates Dense Retrieval (BAAI/bge-m3 embeddings via Qdrant) with Sparse Retrieval (BM25 lexical search) to inject high-precision context directly into the context window.
-*   **Schema-Aware Conditional Routing**: Dynamically grades query complexity (1-10) at runtime to route requests to appropriate compute tiers—drastically reducing overhead by reserving SOTA models solely for tier-3 algorithmic reasoning.
-*   **Adaptive Weighted Voting**: An algorithmic consensus mathematically weights outputs from DeepSeek R1 (Math), Claude Sonnet 4.5 (Pedagogy), and Gemini 2.5 Pro (Vision) strictly based on their proven domain strengths.
-*   **Multi-Round Adversarial Debate**: If mathematical consensus falls below a strict 80% threshold, the system autonomously triggers an adversarial debate phase—eventually invoking GPT-5.1 as an impartial judge to force systematic resolution.
+A **14-agent LangGraph state machine** that converts natural-language operator queries into safe, audited SQL over the IDRE dispute-resolution platform. Custom **MCP tool-use layer** with 7 typed function-calling tools and a mandatory pre-execution **EXPLAIN gate**, XML-injected business rules, and a 14-pattern self-debugging retry loop. Productionized on **AWS via CDK** (EC2 + RDS + Secrets Manager + IAM) with TLS-only read-only DB access, fully-reproducible JSONL audit trails, and **260+ unit tests** gating every deploy.
 
-This complete rewrite has systematically dropped hallucination rates down to 0.31% over 1,270 complex data objects.
+> 🎯 **97% query-execution accuracy** &nbsp;·&nbsp; ⚡ **sub-second p95 latency** &nbsp;·&nbsp; 🧪 **260+ unit tests**
 
-</td>
-<td width="50%" valign="top">
+---
 
-#### ⚡ Key Metrics
+#### ⚙️ Artoo — Agentic SDLC Assistant
+**Telomere** · JIRA → Draft GitHub PRs · *production*
 
-| Metric | Value |
-|--------|-------|
-| **Factual Precision** | 72% → **93.9%** |
-| **Cost per Query** | $0.30 → **$0.14** (50% ↓) |
-| **Win Rate vs Single-Model** | **91.8%** |
-| **p95 Latency** | **< 1 second** |
-| **Schema Compliance** | 200+ fields/query |
-| **Knowledge Graph** | 37.6K nodes, 55K edges |
+An **18-node LangGraph pipeline** that autonomously converts JIRA tickets into Draft Pull Requests (implementation plan + per-file code + AAA tests). Powered by a deterministic Knowledge Retrieval layer (~1,700 git co-change pairs, LLM-summarized file index, scope baselines) and an **Explorer agent** that deep-reads source files via GitHub MCP before code generation. Four quality gates with self-correcting revision loops, **MCP-integrated JIRA + Confluence + GitHub**, SecretStr vaulting + PII sanitization. Deployed on **Streamlit + FastAPI** on AWS.
+
+> 🎯 **~70% file-overlap with dev PRs** &nbsp;·&nbsp; ⏱️ **time-to-first-commit: hours → <15 min** &nbsp;·&nbsp; 🔐 **MCP + secret vaulting**
+
+---
+
+#### 🧠 FLSS — Cost-Aware Multi-Model Consensus
+**Independent Research** · *2 papers under Springer review*
+
+A **14-stage Generative AI pipeline** that shifts consensus aggregation from whole-response voting to **atomic schema validation** via Field-Level Structural Synthesis. Verifies individual fields against heterogeneous model outputs — significantly outperforming RAG baselines. **Adaptive Compute Allocation** routes by semantic complexity, filtering 52% of traffic away from flagship reasoners. High-performance backend with **Hybrid Retrieval (Dense + Sparse) + Reciprocal Rank Fusion**, parallel async inference, and **Semantic Caching (Redis)**. Productionized as **Serverless Microservices** on FastAPI + AWS Lambda + RDS.
+
+> 🎯 **93.93% precision** &nbsp;·&nbsp; 💰 **50.4% cost reduction** ($0.30 → $0.14/query) &nbsp;·&nbsp; 🏆 **91.8% win rate** (Cohen's h=1.74)
+
+---
 
 #### 🔧 Tech Stack
 
@@ -71,34 +73,61 @@ This complete rewrite has systematically dropped hallucination rates down to 0.3
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
-**AI & Machine Learning**
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+**Agentic AI & LLM Stack**
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![MCP Servers](https://img.shields.io/badge/MCP_Servers-6E56CF?style=flat-square&logo=anthropic&logoColor=white)
+![Vector DBs](https://img.shields.io/badge/Vector_DBs-3F8EFC?style=flat-square&logo=databricks&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![Qdrant](https://img.shields.io/badge/Qdrant-FE4155?style=flat-square&logo=qdrant&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square&logo=pinecone&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+
+**Machine Learning & Vision**
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
 **Web & Backend**
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
 
-**Cloud, DevOps & Tools**
+**Cloud, DevOps & Observability**
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS_Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
+![AWS CDK](https://img.shields.io/badge/AWS_CDK-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 
-</td>
-</tr>
-</table>
+---
+
+### 📚 Publications
+
+> Three peer-reviewed papers. The two recent works formalize the **FLSS + Cost-Aware Structured Generation + Knowledge Graph Induction** pipeline behind my current research; the earlier paper documents forensic-ML work from my internship.
+
+**🆕 Recent — both under Springer review**
+
+[![FLSS Paper](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18643835-1C3C3C?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.5281/zenodo.18643835)
+&nbsp; **Field-Level Structural Synthesis: A Schema-Aware Multi-Model Consensus Framework for High-Fidelity Structured Generation and Knowledge Graph Induction**
+
+[![Cost-Aware Paper](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18270482-1C3C3C?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.5281/zenodo.18270482)
+&nbsp; **Cost-Aware Structured Generation: High-Fidelity Synthesis via Hybrid RAG**
+
+**📜 Earlier**
+
+[![DeepFake Paper](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18279368-1C3C3C?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.5281/zenodo.18279368)
+&nbsp; **DeepFake Detection Using Inception-ResNet-v2**
 
 ---
 
