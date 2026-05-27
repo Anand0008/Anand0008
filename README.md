@@ -30,40 +30,7 @@ When I'm not optimizing data pipelines or researching novel architectures, you'l
 
 ---
 
-### 🏗️ What I Build
-
-> Three flagships: two production agentic systems shipping today, one published research pipeline behind them.
-
----
-
-#### 🤖 IDRE Reports Bot
-**Telomere** · Agentic AI Reporting Platform · *production, current role*
-
-A **14-agent LangGraph state machine** that converts natural-language operator queries into safe, audited SQL over the IDRE dispute-resolution platform. Custom **MCP tool-use layer** with 7 typed function-calling tools and a mandatory pre-execution **EXPLAIN gate**, XML-injected business rules, and a 14-pattern self-debugging retry loop. Productionized on **AWS via CDK** (EC2 + RDS + Secrets Manager + IAM) with TLS-only read-only DB access, fully-reproducible JSONL audit trails, and **260+ unit tests** gating every deploy.
-
-> 🎯 **97% query-execution accuracy** &nbsp;·&nbsp; ⚡ **sub-second p95 latency** &nbsp;·&nbsp; 🧪 **260+ unit tests**
-
----
-
-#### ⚙️ Artoo — Agentic SDLC Assistant
-**Telomere** · JIRA → Draft GitHub PRs · *production*
-
-An **18-node LangGraph pipeline** that autonomously converts JIRA tickets into Draft Pull Requests (implementation plan + per-file code + AAA tests). Powered by a deterministic Knowledge Retrieval layer (~1,700 git co-change pairs, LLM-summarized file index, scope baselines) and an **Explorer agent** that deep-reads source files via GitHub MCP before code generation. Four quality gates with self-correcting revision loops, **MCP-integrated JIRA + Confluence + GitHub**, SecretStr vaulting + PII sanitization. Deployed on **Streamlit + FastAPI** on AWS.
-
-> 🎯 **~70% file-overlap with dev PRs** &nbsp;·&nbsp; ⏱️ **time-to-first-commit: hours → <15 min** &nbsp;·&nbsp; 🔐 **MCP + secret vaulting**
-
----
-
-#### 🧠 FLSS — Cost-Aware Multi-Model Consensus
-**Independent Research** · *2 papers under Springer review*
-
-A **14-stage Generative AI pipeline** that shifts consensus aggregation from whole-response voting to **atomic schema validation** via Field-Level Structural Synthesis. Verifies individual fields against heterogeneous model outputs — significantly outperforming RAG baselines. **Adaptive Compute Allocation** routes by semantic complexity, filtering 52% of traffic away from flagship reasoners. High-performance backend with **Hybrid Retrieval (Dense + Sparse) + Reciprocal Rank Fusion**, parallel async inference, and **Semantic Caching (Redis)**. Productionized as **Serverless Microservices** on FastAPI + AWS Lambda + RDS.
-
-> 🎯 **93.93% precision** &nbsp;·&nbsp; 💰 **50.4% cost reduction** ($0.30 → $0.14/query) &nbsp;·&nbsp; 🏆 **91.8% win rate** (Cohen's h=1.74)
-
----
-
-#### 🔧 Tech Stack
+### 🔧 Tech Stack
 
 **Languages**
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -128,6 +95,54 @@ A **14-stage Generative AI pipeline** that shifts consensus aggregation from who
 
 [![DeepFake Paper](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18279368-1C3C3C?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.5281/zenodo.18279368)
 &nbsp; **DeepFake Detection Using Inception-ResNet-v2**
+
+---
+
+### 🏗️ What I Build
+
+> Three flagships: two production agentic systems shipping today, one published research pipeline behind them. Skim the metric line under each; dig into the bullets if a project catches your eye.
+
+---
+
+#### 🤖 IDRE Reports Bot
+**Telomere** · *Agentic AI Reporting Platform · production, current role*
+
+A **14-agent LangGraph state machine** that converts natural-language operator queries into safe, audited SQL over the IDRE dispute-resolution platform. Productionized on **AWS via CDK** with TLS-only read-only DB access, JSONL audit trails, and **260+ unit tests** gating every deploy.
+
+* **🛡️ MCP Tool-Use Layer**: 7 typed function-calling tools fronted by a mandatory pre-execution `EXPLAIN` gate — the agent cannot run a query against the DB without first proving its plan against the optimizer, eliminating an entire class of destructive failure modes.
+* **📐 XML-Injected Business Rules**: Domain constraints compiled into the agent context at runtime, keeping rule changes operator-editable in a versioned rule store — no redeploys for policy tweaks.
+* **🔁 14-Pattern Self-Debugging Retry Loop**: Common SQL error signatures (syntax drift, NULL handling, schema mismatch, type coercion, JOIN explosion, …) trigger *targeted* regeneration prompts instead of blind retries — convergence in ≤3 hops.
+* **🔍 Forensic Audit Trail**: Every agent step (input → decision → tool call → result) emitted as immutable JSONL. Operator forensics is fully reproducible without re-running anything.
+
+> 🎯 **97% query-execution accuracy** &nbsp;·&nbsp; ⚡ **sub-second p95 latency** under live operator load
+
+---
+
+#### ⚙️ Artoo — Agentic SDLC Assistant
+**Telomere** · *JIRA → Draft GitHub PRs · production*
+
+An **18-node LangGraph pipeline** that autonomously converts JIRA tickets into draft Pull Requests — implementation plan, per-file code, and AAA tests. Deployed on **Streamlit + FastAPI** on AWS.
+
+* **🧭 Deterministic Knowledge Retrieval**: ~1,700 git co-change pairs + an LLM-summarized file index + scope baselines feed every plan with concrete, repo-specific context. The model proposes diffs grounded in *this* codebase's patterns, not in hallucinated industry conventions.
+* **🔬 Explorer Agent**: Deep-reads candidate source files via **GitHub MCP** *before* code generation — the model sees the actual code it will modify, not a vibes-summary of what the filename suggests.
+* **🚦 Four-Gate Quality Pipeline**: Plan-validation → code-validation → test-validation → diff-review, each gate with a self-correcting revision loop bounded by a max-attempt budget. Tickets either pass all four gates or get returned with reasons.
+* **🔐 Security-by-Default**: MCP-integrated JIRA + Confluence + GitHub credentials are vaulted via `SecretStr`; ticket bodies pass through a PII sanitizer before any LLM call.
+
+> 🎯 **~70% file-overlap with developer-authored PRs** &nbsp;·&nbsp; ⏱️ **time-to-first-commit: hours → <15 min**
+
+---
+
+#### 🧠 FLSS — Cost-Aware Multi-Model Consensus
+**Independent Research** · *14-stage pipeline · 2 papers under Springer review*
+
+A 14-stage generative-AI pipeline that shifts consensus aggregation from whole-response voting to **atomic schema validation**. The system reasons about individual data fields independently, then assembles them into a structurally-correct whole.
+
+* **🔀 Hybrid Retrieval + RRF**: Dense (BAAI/bge-m3 via Qdrant) + Sparse (BM25 lexical) merged via **Reciprocal Rank Fusion** to inject high-precision context into the consensus window — neither retriever alone is sufficient on long-tail technical queries.
+* **🎚️ Adaptive Compute Allocation**: A lightweight classifier scores query complexity (1–10) at runtime, routing **52%** of low-complexity traffic away from frontier reasoners. Flagship models reserved for tier-3 algorithmic reasoning; the rest run on cheap, fast tiers.
+* **⚖️ Adversarial Weighted Voting**: Outputs from DeepSeek R1 (math), Claude Sonnet 4.5 (pedagogy), and Gemini 2.5 Pro (vision) are mathematically weighted by domain strength. Sub-80% consensus triggers a multi-round adversarial debate phase with GPT-5.1 as impartial judge.
+* **☁️ Serverless Production**: FastAPI on AWS Lambda + RDS, fronted by Redis-backed **semantic caching** for sub-second tail latency under bursty load.
+
+> 🎯 **93.93% precision** &nbsp;·&nbsp; 💰 **50.4% cost reduction** ($0.30 → $0.14/query) &nbsp;·&nbsp; 🏆 **91.8% win rate** (Cohen's h = 1.74)
 
 ---
 
