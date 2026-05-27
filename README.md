@@ -40,14 +40,59 @@ When I'm not optimizing data pipelines or researching novel architectures, you'l
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
-**Agentic AI & LLM Stack**
+**Agentic AI & LLM Stack** &nbsp;·&nbsp; *orchestration · agents · protocols · vector stores · providers · inference · observability*
+
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![MCP Servers](https://img.shields.io/badge/MCP_Servers-6E56CF?style=flat-square&logo=anthropic&logoColor=white)
-![Vector DBs](https://img.shields.io/badge/Vector_DBs-3F8EFC?style=flat-square&logo=databricks&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-4051B5?style=flat-square&logoColor=white)
+![CrewAI](https://img.shields.io/badge/CrewAI-FF6B35?style=flat-square&logoColor=white)
+![AutoGen](https://img.shields.io/badge/AutoGen-00A2ED?style=flat-square&logo=microsoft&logoColor=white)
+![Agno](https://img.shields.io/badge/Agno-7C3AED?style=flat-square&logoColor=white)
+![DSPy](https://img.shields.io/badge/DSPy-5C2D91?style=flat-square&logoColor=white)
+![Pydantic&nbsp;AI](https://img.shields.io/badge/Pydantic_AI-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![Haystack](https://img.shields.io/badge/Haystack-03AF9D?style=flat-square&logoColor=white)
+
+![MCP&nbsp;Servers](https://img.shields.io/badge/MCP_Servers-6E56CF?style=flat-square&logo=anthropic&logoColor=white)
+![Function&nbsp;Calling](https://img.shields.io/badge/Function_Calling-0EA5E9?style=flat-square&logoColor=white)
+![Instructor](https://img.shields.io/badge/Instructor-FF3366?style=flat-square&logoColor=white)
+![Outlines](https://img.shields.io/badge/Outlines-22C55E?style=flat-square&logoColor=white)
+![JSON&nbsp;Schema](https://img.shields.io/badge/JSON_Schema-000000?style=flat-square&logo=json&logoColor=white)
+
+![Vector&nbsp;DBs](https://img.shields.io/badge/Vector_DBs-3F8EFC?style=flat-square&logo=databricks&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-FE4155?style=flat-square&logo=qdrant&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square&logo=pinecone&logoColor=white)
+![Chroma](https://img.shields.io/badge/Chroma-4DABF7?style=flat-square&logoColor=white)
+![Weaviate](https://img.shields.io/badge/Weaviate-00C48C?style=flat-square&logo=weaviate&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-1877F2?style=flat-square&logo=meta&logoColor=white)
+![BM25](https://img.shields.io/badge/BM25_%2F_RRF-475569?style=flat-square&logoColor=white)
+
+![Hugging&nbsp;Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![BGE&nbsp;Embeddings](https://img.shields.io/badge/BGE_Embeddings-1976D2?style=flat-square&logoColor=white)
+![Sentence&nbsp;Transformers](https://img.shields.io/badge/SentenceTransformers-FF9800?style=flat-square&logoColor=white)
+
+![OpenAI](https://img.shields.io/badge/OpenAI-10A37F?style=flat-square&logo=openai&logoColor=white)
+![Anthropic&nbsp;Claude](https://img.shields.io/badge/Anthropic_Claude-D97706?style=flat-square&logo=anthropic&logoColor=white)
+![Google&nbsp;Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white)
+![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=flat-square&logoColor=white)
+![Llama](https://img.shields.io/badge/Meta_Llama-1877F2?style=flat-square&logo=meta&logoColor=white)
+![Mistral](https://img.shields.io/badge/Mistral-FA520F?style=flat-square&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
+
+![vLLM](https://img.shields.io/badge/vLLM-FFC107?style=flat-square&logoColor=black)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![TGI](https://img.shields.io/badge/TGI-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+
+![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![Langfuse](https://img.shields.io/badge/Langfuse-1D4ED8?style=flat-square&logoColor=white)
+![Ragas](https://img.shields.io/badge/Ragas-EC4899?style=flat-square&logoColor=white)
+![Arize&nbsp;Phoenix](https://img.shields.io/badge/Arize_Phoenix-FF6F61?style=flat-square&logoColor=white)
+
+![LoRA](https://img.shields.io/badge/LoRA_%2F_PEFT-9333EA?style=flat-square&logoColor=white)
+![bitsandbytes](https://img.shields.io/badge/bitsandbytes-374151?style=flat-square&logoColor=white)
+![TRL](https://img.shields.io/badge/TRL-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 **Machine Learning & Vision**
@@ -100,7 +145,7 @@ When I'm not optimizing data pipelines or researching novel architectures, you'l
 
 ### 🏗️ What I Build
 
-> Three flagships: two production agentic systems shipping today, one published research pipeline behind them. Skim the metric line under each; dig into the bullets if a project catches your eye.
+> Flagships first — the current production agentic systems and the research pipeline they sit on. For breadth, browse **Featured Projects** below or the full repo list on this profile (forensic ML, NLP, knowledge graphs, conversational AI, and more).
 
 ---
 
