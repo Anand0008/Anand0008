@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://cal.com/anand-wankhade-tsikdo"><img src="https://img.shields.io/badge/-Book_a_Call-6366F1?style=for-the-badge&logo=caldotcom&logoColor=white" /></a>
+  <a href="https://cal.com/anand-wankhade"><img src="https://img.shields.io/badge/-Book_a_Call-6366F1?style=for-the-badge&logo=caldotcom&logoColor=white" /></a>
   <a href="https://wankhade.me"><img src="https://img.shields.io/badge/-Portfolio-38bdf8?style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
   <a href="https://linkedin.com/in/anand-wankhade-791089174/"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="mailto:anandwankhade0007@gmail.com"><img src="https://img.shields.io/badge/-anandwankhade0007%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
